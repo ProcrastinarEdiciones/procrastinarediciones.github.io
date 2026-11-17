@@ -35,7 +35,7 @@ h2 { font-size: clamp(2rem, 4vw, 3.65rem); }
 .boton:focus-visible { outline-color: var(--tinta); }
 .boton:hover { background: var(--tinta); }
 .obrero { margin: 0; text-align: center; }
-.obrero img { display: block; width: min(100%, 27.4375rem); height: auto; margin-inline: auto; border-bottom: 2px solid var(--tinta); mix-blend-mode: multiply; }
+.obrero img { display: block; width: min(100%, 27.4375rem); height: auto; margin-inline: auto; mix-blend-mode: darken; }
 .obrero figcaption { padding-top: .7rem; }
 button { border: 0; background: transparent; color: var(--gris); padding: .45rem .65rem; cursor: pointer; font: 700 .8rem/1.35 var(--sans); text-decoration: underline; text-underline-offset: .2em; }
 .cita { margin: 0; background: var(--tinta); color: var(--papel); border-top: .45rem solid var(--mostaza); padding-block: clamp(2rem, 6vw, 4.7rem); }
@@ -45,7 +45,7 @@ blockquote p { margin: 0; }
 .cita figcaption, .tesis footer { margin-top: 1.2rem; font: .89rem/1.55 var(--sans); }
 .cita figcaption { color: var(--mostaza); }
 .editorial { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,2fr); gap: clamp(2rem, 6vw, 6rem); padding-block: clamp(3rem, 8vw, 7rem); }
-.identidad img { display: block; width: min(100%, 13rem); height: auto; margin-bottom: 1rem; mix-blend-mode: multiply; }
+.identidad img { display: block; width: min(100%, 13rem); height: auto; margin-bottom: 1rem; mix-blend-mode: darken; }
 .identidad h2 { font-size: clamp(1.7rem, 3vw, 2.5rem); }
 .identidad p, .secciones p, .contacto p { color: var(--gris); }
 .manifiesto { border-top: .4rem solid var(--rojo); padding-top: 1.2rem; }
@@ -78,4 +78,3 @@ blockquote p { margin: 0; }
   /* Mapea el grabado original de negro a blanco roto sin redibujar el emblema. */
   filter: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='t' color-interpolation-filters='sRGB'%3E%3CfeComponentTransfer%3E%3CfeFuncR type='table' tableValues='.06275 .96078'/%3E%3CfeFuncG type='table' tableValues='.06275 .94118'/%3E%3CfeFuncB type='table' tableValues='.06275 .90196'/%3E%3C/feComponentTransfer%3E%3C/filter%3E%3C/svg%3E%23t");
 }
-.obrero img { mix-blend-mode: normal; }
