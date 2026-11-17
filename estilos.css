@@ -1,0 +1,73 @@
+:root {
+  --tinta: #101010;
+  --papel: #F5F0E6;
+  --rojo: #C12C25;
+  --mostaza: #D4B76B;
+  --gris: #55534E;
+  --serif: Georgia, 'Times New Roman', serif;
+  --sans: Arial, sans-serif;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--papel); color: var(--tinta); font: 1rem/1.5 var(--serif); }
+a { color: inherit; text-underline-offset: .22em; }
+a:hover { text-decoration-thickness: .14em; }
+:focus-visible { outline: 3px solid currentColor; outline-offset: 5px; }
+.marco { width: min(88%, 76rem); margin-inline: auto; }
+.salto { position: absolute; top: .75rem; left: .75rem; padding: .5rem 1rem; background: var(--papel); transform: translateY(-200%); z-index: 1; }
+.salto:focus { transform: none; }
+.cabecera, .pie { background: var(--tinta); color: var(--papel); }
+.cabecera { border-bottom: .4rem solid var(--rojo); }
+.barra { min-height: 4.75rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: .75rem 2rem; padding-block: 1rem; }
+.marca { font-size: 1.35rem; font-weight: 700; text-decoration: none; }
+.marca span { color: var(--mostaza); }
+nav { display: flex; flex-wrap: wrap; gap: .65rem 1.15rem; }
+nav a, .pie { font: 700 .82rem/1.4 var(--sans); }
+nav a:hover, .pie a { color: var(--mostaza); }
+.portada { display: grid; grid-template-columns: minmax(0,1.3fr) minmax(0,1fr); align-items: center; gap: 2rem; padding-block: clamp(3rem, 8vw, 7.5rem); }
+.estado { display: inline-flex; align-items: center; gap: .55rem; margin: 0 0 1.5rem; padding: .45rem .65rem; border: 1px solid var(--tinta); font: 700 .7rem/1.2 var(--sans); text-transform: uppercase; letter-spacing: .1em; }
+.estado span { width: .55rem; height: .55rem; background: var(--rojo); }
+h1, h2 { margin: 0; font-weight: 700; line-height: 1; letter-spacing: -.055em; }
+h1 { font-size: clamp(2.75rem, 7.5vw, 7rem); }
+h1 em { display: block; color: var(--rojo); font-weight: 400; }
+h2 { font-size: clamp(2rem, 4vw, 3.65rem); }
+.entrada { max-width: 32rem; font-size: clamp(1.12rem, 2vw, 1.43rem); margin: 1.5rem 0; }
+.boton { display: inline-flex; align-items: center; gap: 1.5rem; padding: .85rem 1rem; background: var(--rojo); color: var(--papel); font: 700 .86rem/1.35 var(--sans); }
+.boton:focus-visible { outline-color: var(--tinta); }
+.boton:hover { background: var(--tinta); }
+.obrero { margin: 0; text-align: center; }
+.obrero img { display: block; width: min(100%, 27.4375rem); height: auto; margin-inline: auto; border-bottom: 2px solid var(--tinta); mix-blend-mode: multiply; }
+.obrero figcaption { padding-top: .7rem; }
+button { border: 0; background: transparent; color: var(--gris); padding: .45rem .65rem; cursor: pointer; font: 700 .8rem/1.35 var(--sans); text-decoration: underline; text-underline-offset: .2em; }
+.cita { margin: 0; background: var(--tinta); color: var(--papel); border-top: .45rem solid var(--mostaza); padding-block: clamp(2rem, 6vw, 4.7rem); }
+blockquote { margin: 0; }
+.cita blockquote { font-size: clamp(1.65rem, 4vw, 3.5rem); line-height: 1.13; max-width: 53rem; }
+blockquote p { margin: 0; }
+.cita figcaption, .tesis footer { margin-top: 1.2rem; font: .89rem/1.55 var(--sans); }
+.cita figcaption { color: var(--mostaza); }
+.editorial { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,2fr); gap: clamp(2rem, 6vw, 6rem); padding-block: clamp(3rem, 8vw, 7rem); }
+.identidad img { display: block; width: min(100%, 13rem); height: auto; margin-bottom: 1rem; mix-blend-mode: multiply; }
+.identidad h2 { font-size: clamp(1.7rem, 3vw, 2.5rem); }
+.identidad p, .secciones p, .contacto p { color: var(--gris); }
+.manifiesto { border-top: .4rem solid var(--rojo); padding-top: 1.2rem; }
+.manifiesto > p { max-width: 65ch; font-size: clamp(1.05rem, 1.5vw, 1.25rem); line-height: 1.65; }
+.tesis { background: var(--mostaza); padding: 1.4rem; font-size: 1.16rem; }
+.mesa { border-block: 1px solid var(--tinta); }
+.secciones { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); }
+.secciones section { padding: 2rem clamp(.9rem, 3vw, 2rem); border-left: 1px solid var(--tinta); }
+.secciones section:first-child { padding-left: 0; border-left: 0; }
+.secciones h2 { font-size: clamp(1.6rem, 3vw, 2.5rem); }
+.contacto { padding-block: clamp(2.5rem, 6vw, 5rem); }
+.contacto p { margin-bottom: 0; }
+:target { scroll-margin-top: 1rem; }
+@media (max-width: 740px) {
+  .portada, .editorial { grid-template-columns: 1fr; }
+  .portada { gap: 1.25rem; }
+  h1 { font-size: clamp(2.6rem, 11vw, 5.75rem); }
+  .obrero img { max-width: 19rem; }
+}
+@media (max-width: 560px) {
+  .secciones { grid-template-columns: 1fr; }
+  .secciones section { padding: 1.4rem 0; border-left: 0; }
+  .secciones section + section { border-top: 1px solid var(--tinta); }
+  .secciones p { margin-bottom: 0; }
+}
