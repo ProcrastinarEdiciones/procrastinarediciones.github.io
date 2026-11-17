@@ -5,7 +5,7 @@ let playing = false;
 
 function setPlaying(enabled) {
   playing = enabled;
-  worker.src = enabled ? 'obrero-descanso.gif' : 'obrero-grabado.webp';
+  worker.src = enabled ? 'obrero-rojo.gif' : 'obrero-rojo.webp';
   toggle.textContent = enabled ? 'Pausar animación' : 'Reproducir animación';
 }
 
