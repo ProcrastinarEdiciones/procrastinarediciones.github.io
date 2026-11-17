@@ -5,7 +5,7 @@ let playing = false;
 
 function setPlaying(enabled) {
   playing = enabled;
-  worker.src = enabled ? 'obrero-llamas.gif' : 'obrero-llamas.webp';
+  worker.src = enabled ? 'obrero-grabado.gif' : 'obrero-grabado.webp';
   toggle.textContent = enabled ? 'Pausar animación' : 'Reproducir animación';
 }
 
