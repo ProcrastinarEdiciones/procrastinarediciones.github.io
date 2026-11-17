@@ -19,7 +19,7 @@ a:hover { text-decoration-thickness: .14em; }
 .cabecera { border-bottom: .4rem solid var(--rojo); }
 .barra { min-height: 4.75rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: .75rem 2rem; padding-block: 1rem; }
 .marca { font-size: 1.35rem; font-weight: 700; text-decoration: none; }
-.marca span { color: var(--mostaza); }
+.marca span { color: var(--rojo); }
 nav { display: flex; flex-wrap: wrap; gap: .65rem 1.15rem; }
 nav a, .pie { font: 700 .82rem/1.4 var(--sans); }
 nav a:hover, .pie a { color: var(--mostaza); }
