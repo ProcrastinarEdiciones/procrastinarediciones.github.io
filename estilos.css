@@ -80,6 +80,6 @@ blockquote p { margin: 0; }
 }
 
 @media (hover: hover) and (pointer: fine) {
-  html { cursor: url("cursor-botella.png") 30 2, auto; }
-  a, button { cursor: url("cursor-botella.png") 30 2, pointer; }
+  html { cursor: url("cursor-botella-48.png") 34 3, auto; }
+  a, button { cursor: url("cursor-botella-48.png") 34 3, pointer; }
 }
