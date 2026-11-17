@@ -5,7 +5,7 @@ let playing = false;
 
 function setPlaying(enabled) {
   playing = enabled;
-  worker.src = enabled ? 'obrero-en-papel.gif' : 'obrero-en-papel.webp';
+  worker.src = enabled ? 'obrero-mismo-personaje.gif' : 'obrero-en-papel.webp';
   toggle.textContent = enabled ? 'Pausar animación' : 'Reproducir animación';
 }
 
