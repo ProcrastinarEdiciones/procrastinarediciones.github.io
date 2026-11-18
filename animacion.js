@@ -5,7 +5,7 @@ let playing = false;
 
 function setPlaying(enabled) {
   playing = enabled;
-  worker.src = enabled ? 'joven-chandal.gif' : 'joven-chandal.webp';
+  worker.src = enabled ? 'joven-manifiesto.gif' : 'joven-manifiesto.webp';
   toggle.textContent = enabled ? 'Pausar animación' : 'Reproducir animación';
 }
 
