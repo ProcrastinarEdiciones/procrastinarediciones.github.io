@@ -1,9 +1,7 @@
 :root {
   --tinta: #101010;
-  --papel: #F5F0E6;
+  --papel: #FFFFFF;
   --rojo: #B41622;
-  --mostaza: #D4B76B;
-  --gris: #55534E;
   --serif: Georgia, 'Times New Roman', serif;
   --sans: Arial, sans-serif;
 }
@@ -22,7 +20,7 @@ a:hover { text-decoration-thickness: .14em; }
 .marca span { color: var(--rojo); }
 nav { display: flex; flex-wrap: wrap; gap: .65rem 1.15rem; }
 nav a, .pie { font: 700 .82rem/1.4 var(--sans); }
-nav a:hover, .pie a { color: var(--mostaza); }
+nav a:hover, .pie a:hover { text-decoration-thickness: .14em; }
 .portada { display: grid; grid-template-columns: minmax(0,1.3fr) minmax(0,1fr); align-items: center; gap: 2rem; padding-block: clamp(3rem, 8vw, 7.5rem); }
 .estado { display: inline-flex; align-items: center; gap: .55rem; margin: 0 0 1.5rem; padding: .45rem .65rem; border: 1px solid var(--tinta); font: 700 .7rem/1.2 var(--sans); text-transform: uppercase; letter-spacing: .1em; }
 .estado span { width: .55rem; height: .55rem; background: var(--rojo); }
@@ -37,20 +35,23 @@ h2 { font-size: clamp(2rem, 4vw, 3.65rem); }
 .obrero { margin: 0; text-align: center; }
 .obrero img { display: block; width: min(100%, 27.4375rem); height: auto; margin-inline: auto; mix-blend-mode: darken; }
 .obrero figcaption { padding-top: .7rem; }
-button { border: 0; background: transparent; color: var(--gris); padding: .45rem .65rem; cursor: pointer; font: 700 .8rem/1.35 var(--sans); text-decoration: underline; text-underline-offset: .2em; }
-.cita { margin: 0; background: var(--tinta); color: var(--papel); border-top: .45rem solid var(--mostaza); padding-block: clamp(2rem, 6vw, 4.7rem); }
+button { border: 0; background: transparent; color: var(--tinta); padding: .45rem .65rem; cursor: pointer; font: 700 .8rem/1.35 var(--sans); text-decoration: underline; text-underline-offset: .2em; }
+.cita { margin: 0; background: var(--tinta); color: var(--papel); border-top: .45rem solid var(--rojo); padding-block: clamp(2rem, 6vw, 4.7rem); }
 blockquote { margin: 0; }
 .cita blockquote { font-size: clamp(1.65rem, 4vw, 3.5rem); line-height: 1.13; max-width: 53rem; }
 blockquote p { margin: 0; }
 .cita figcaption, .tesis footer { margin-top: 1.2rem; font: .89rem/1.55 var(--sans); }
-.cita figcaption { color: var(--mostaza); }
+.cita figcaption { color: var(--papel); }
 .editorial { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,2fr); gap: clamp(2rem, 6vw, 6rem); padding-block: clamp(3rem, 8vw, 7rem); }
-.identidad img { display: block; width: min(100%, 13rem); height: auto; margin-bottom: 1rem; mix-blend-mode: multiply; }
+.logo-editorial { width: min(100%, 15rem); margin-bottom: 1rem; text-align: center; }
+.logo-editorial img { display: block; width: 100%; height: auto; mix-blend-mode: multiply; }
+.logo-editorial strong { display: block; font: 700 clamp(1.35rem, 2.4vw, 2rem)/1 var(--serif); }
+.logo-editorial strong span { display: block; color: var(--rojo); }
 .identidad h2 { font-size: clamp(1.7rem, 3vw, 2.5rem); }
-.identidad p, .secciones p, .contacto p { color: var(--gris); }
+.identidad p, .secciones p, .contacto p { color: var(--tinta); }
 .manifiesto { border-top: .4rem solid var(--rojo); padding-top: 1.2rem; }
 .manifiesto > p { max-width: 65ch; font-size: clamp(1.05rem, 1.5vw, 1.25rem); line-height: 1.65; }
-.tesis { background: var(--mostaza); padding: 1.4rem; font-size: 1.16rem; }
+.tesis { background: var(--rojo); color: var(--papel); padding: 1.4rem; font-size: 1.16rem; }
 .mesa { border-block: 1px solid var(--tinta); }
 .secciones { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); }
 .secciones section { padding: 2rem clamp(.9rem, 3vw, 2rem); border-left: 1px solid var(--tinta); }
@@ -74,8 +75,8 @@ blockquote p { margin: 0; }
 
 
 @media (hover: hover) and (pointer: fine) {
-  html { cursor: url("cursor-botella-76.png") 53 4, auto; }
-  a, button { cursor: url("cursor-botella-76.png") 53 4, pointer; }
+  html { cursor: url("cursor-botella-tricolor.png") 53 4, auto; }
+  a, button { cursor: url("cursor-botella-tricolor.png") 53 4, pointer; }
 }
 
 main p { text-align: justify; hyphens: auto; }
