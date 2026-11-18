@@ -5,7 +5,7 @@ let playing = false;
 
 function setPlaying(enabled) {
   playing = enabled;
-  worker.src = enabled ? 'joven-modelo.gif' : 'joven-modelo.webp';
+  worker.src = enabled ? 'joven-modelo-rotulado.gif' : 'joven-modelo-rotulado.webp';
   toggle.textContent = enabled ? 'Pausar animación' : 'Reproducir animación';
 }
 
