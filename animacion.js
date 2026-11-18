@@ -5,7 +5,7 @@ let playing = false;
 
 function setPlaying(enabled) {
   playing = enabled;
-  worker.src = enabled ? 'joven-continuo.webp' : 'joven-continuo-poster.webp';
+  worker.src = enabled ? 'joven-atlas.webp' : 'joven-atlas-poster.webp';
   toggle.textContent = enabled ? 'Pausar animación' : 'Reproducir animación';
 }
 
